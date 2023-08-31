@@ -1,6 +1,6 @@
 package ku.cs.cafe.controller;
 
-import ku.cs.cafe.entity.Member;
+import ku.cs.cafe.model.SignupRequest;
 import ku.cs.cafe.service.SignupService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -21,7 +21,7 @@ public class SignupController {
     }
 
     @PostMapping("/signup")
-    public String sighupUser(@ModelAttribute Member user, Model model) {
+    public String sighupUser(@ModelAttribute SignupRequest user, Model model) {
         if (signupService.isUsernameAvailable(user.getUsername())) {
             signupService.createUser(user);
             model.addAttribute("signupSuccess", true);
