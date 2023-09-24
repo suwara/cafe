@@ -1,5 +1,5 @@
 package ku.cs.cafe.repository;
-
+//suwara apaipong[6010405572]
 import ku.cs.cafe.entity.OrderItem;
 import ku.cs.cafe.entity.OrderItemKey;
 import org.springframework.data.jpa.repository.JpaRepository;

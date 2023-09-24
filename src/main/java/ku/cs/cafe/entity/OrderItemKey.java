@@ -1,5 +1,5 @@
 package ku.cs.cafe.entity;
-
+//suwara apaipong[6010405572]
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;
